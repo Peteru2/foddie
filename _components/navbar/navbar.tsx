@@ -6,9 +6,9 @@ const Navbar = () => {
     return(
         <>
                 <nav className="bg-transparent w-full flex ">
-                      {navItems.map( (items, index) =>(
-                        <Link href={items.url}>
-                        < div className="text-secondary">
+                      {navItems.map((items, index) =>(
+                        <Link href={items.url} key={items.id}>
+                        < div className="text-accent">
                         {items.title}          
                         </div>
                         </Link>
